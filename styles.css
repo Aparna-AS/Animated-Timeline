@@ -155,16 +155,82 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    /* Align navigation items horizontally and center them on smaller screens */
     .timeline-navigation {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between; /* Aligns the navigation items to the left */
+        overflow-x: auto; /* Allows horizontal scrolling if items don't fit */
+        white-space: nowrap; /* Prevents text from wrapping */
+        padding: 0 15px; /* Adds padding to avoid edges */
         align-items: center;
+         margin-bottom: 10px;
+         position: relative;
     }
-
+    /* .timeline-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 0 10px;
+} */
+    /* Adjust size and spacing of navigation circles */
     .timeline-nav-item {
-        margin-bottom: 10px;
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 22px; /* Add spacing between items */
     }
 
-    .timeline-progress {
-        display: none;
+    /* Styling for the span inside the navigation item */
+    .timeline-nav-item span {
+        color: gray;
+        font-size: 1px;
+        margin-left: 5px;
+        margin-bottom: 20px; /* Adjust margin-bottom for mobile */
+        white-space: nowrap; /* Keep text in a single line */
+    }
+
+    /* Hide the progress bar on mobile for a cleaner look */
+    
+
+    /* Adjust the size of the timeline content for smaller screens */
+    .timeline-item img {
+        width: 80px; /* Reduce image size */
+        height: 80px; /* Keep it square */
+    }
+
+    .timeline-item h2 {
+        font-size: 16px; /* Slightly smaller font for headings */
+    }
+
+    .timeline-item p {
+        font-size: 12px; /* Slightly smaller font for paragraph */
+    }
+}
+
+.timeline-progress {
+
+}
+@media (max-width: 480px) {
+    /* Further reduce font sizes and spacing for very small screens */
+    .timeline-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .timeline-item h2 {
+        font-size: 14px;
+    }
+
+    .timeline-item p {
+        font-size: 12px;
+        margin-bottom: 0%;
+    }
+
+    /* Styling for the span inside the navigation item on very small screens */
+    .timeline-nav-item span {
+        font-size: 5px; /* Smaller font size for very small screens */
+        z-index: 1;
+
+        
     }
 }
