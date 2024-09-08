@@ -177,7 +177,7 @@ body {
     /* Adjust size and spacing of navigation circles */
     .timeline-nav-item {
         margin-bottom: 0; /* Remove bottom margin */
-        margin-right: 22px; /* Add spacing between items */
+        margin-right: 10px; /* Add spacing between items */
     }
 
     /* Styling for the span inside the navigation item */
@@ -207,9 +207,7 @@ body {
     }
 }
 
-.timeline-progress {
 
-}
 @media (max-width: 480px) {
     /* Further reduce font sizes and spacing for very small screens */
     .timeline-item img {
