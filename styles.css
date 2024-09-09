@@ -161,7 +161,7 @@ body {
         justify-content: space-between; /* Aligns the navigation items to the left */
         overflow-x: auto; /* Allows horizontal scrolling if items don't fit */
         white-space: nowrap; /* Prevents text from wrapping */
-        padding: 0 15px; /* Adds padding to avoid edges */
+        padding:  1px; /* Adds padding to avoid edges */
         align-items: center;
          margin-bottom: 10px;
          position: relative;
@@ -185,7 +185,7 @@ body {
         color: gray;
         font-size: 1px;
         margin-left: 5px;
-        margin-bottom: 20px; /* Adjust margin-bottom for mobile */
+        margin-bottom: 23px; /* Adjust margin-bottom for mobile */
         white-space: nowrap; /* Keep text in a single line */
     }
 
@@ -203,7 +203,7 @@ body {
     }
 
     .timeline-item p {
-        font-size: 12px; /* Slightly smaller font for paragraph */
+        font-size: 7px; /* Slightly smaller font for paragraph */
     }
 }
 
@@ -211,24 +211,27 @@ body {
 @media (max-width: 480px) {
     /* Further reduce font sizes and spacing for very small screens */
     .timeline-item img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0%;
     }
 
     .timeline-item h2 {
         font-size: 14px;
+        padding: auto;
     }
 
     .timeline-item p {
         font-size: 12px;
-        margin-bottom: 0%;
+        padding: 1px;
+        
     }
 
     /* Styling for the span inside the navigation item on very small screens */
     .timeline-nav-item span {
         font-size: 5px; /* Smaller font size for very small screens */
         z-index: 1;
-
+        margin-bottom: 25px;
         
     }
 }
