@@ -157,15 +157,19 @@ body {
 @media (max-width: 768px) {
     /* Align navigation items horizontally and center them on smaller screens */
     .timeline-navigation {
-        display: flex;
+        
         justify-content: space-between; /* Aligns the navigation items to the left */
         overflow-x: auto; /* Allows horizontal scrolling if items don't fit */
         white-space: nowrap; /* Prevents text from wrapping */
-        padding:  1px; /* Adds padding to avoid edges */
+        padding:  10px; /* Adds padding to avoid edges */
         align-items: center;
          margin-bottom: 10px;
-         position: relative;
+        
+         margin-top: 20px;
+         z-index: 0;
     }
+
+
     /* .timeline-navigation {
     display: flex;
     justify-content: space-between;
@@ -205,6 +209,31 @@ body {
     .timeline-item p {
         font-size: 7px; /* Slightly smaller font for paragraph */
     }
+     .timeline-nav-item span {
+        font-size: 5px; /* Smaller font size for very small screens */
+        z-index: 1;
+        margin-bottom: 35px;
+        z-index: 3;
+     }
+        .timeline-item.active {
+        transform: scale(0.8); /* Reduce size by scaling down */
+        height: 100px; /* Ensure it adjusts properly */
+        width: auto; /* Ensure it adjusts properly */
+        justify-content: space-between;
+        z-index: -1;
+    }
+    .timeline-nav-item {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 }
 
 
@@ -218,7 +247,7 @@ body {
 
     .timeline-item h2 {
         font-size: 14px;
-        padding: auto;
+        
     }
 
     .timeline-item p {
@@ -231,7 +260,9 @@ body {
     .timeline-nav-item span {
         font-size: 5px; /* Smaller font size for very small screens */
         z-index: 1;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
+        z-index: 3;
+        
         
     }
 }
